@@ -72,13 +72,13 @@ export default function Page() {
   return (
     <div ref={vantaRef} className={`${merriweather.className} h-[540px] w-full pt-[140px]`}>
       <div className="ml-[57px]">
-        <h1 className="text-[24px] mb-[9px] w-[522px] font-bold">Menerjemahkan <span className="bg-text-gradient2 bg-clip-text text-transparent">Bahasa Isyarat</span> dengan Cepat dan Mudah dengan <span className="bg-text-gradient3 bg-clip-text text-transparent">Teknologi AI.</span></h1>
+        <h1 className="text-[24px] mb-[13px] w-[522px] font-bold">Menerjemahkan <span className="bg-text-gradient2 bg-clip-text text-transparent">Bahasa Isyarat</span> dengan Cepat dan Mudah dengan <span className="bg-text-gradient3 bg-clip-text text-transparent">Teknologi AI.</span></h1>
         <p className={`${playfair.className} text-[14px] w-[461px] font-normal`}>Kami menghadirkan solusi inovatif yang mengubah isyarat menjadi teks dan suara secara instan, mempermudah komunikasi yang cepat, akurat</p>
-        <div className="border border-red-600 flex w-max ml-[45px] mt-[40px] gap-[25px]">
-          <a href="" className="border border-dashed border-white p-[13px]">Sign in</a>
-          <a href="">
-            <p>Try HiVo</p>
-            <img src="/" alt="" />
+        <div className="flex items-center w-max ml-[45px] mt-[40px] gap-[25px]">
+          <a href="" className="text-[12px] border border-dashed border-white pt-[13px] pb-[13px] pl-[35px] pr-[35px] rounded-[10px]">Sign in</a>
+          <a href="" className="border border-dashed border-white pt-[13px] pb-[13px] pl-[18px] pr-[18px] bg-[#FFFFFF] text-[#213555] rounded-[10px] flex gap-[4px]">
+            <p className="text-[12px]">Try HiVo</p>
+            <img src="/icon/arrow-up.svg" alt="" className="w-[18px]" />
           </a>
         </div>
       </div>
