@@ -27,11 +27,10 @@ export default function Page() {
   const [vantaEffect, setVantaEffect] = useState<any>(null);
 
   useEffect(() => {
-    // Fungsi untuk memuat script eksternal
     const loadScript = (src: string) => {
       return new Promise<void>((resolve) => {
         if (document.querySelector(`script[src="${src}"]`)) {
-          resolve(); // Jika script sudah ada, langsung lanjut
+          resolve(); 
           return;
         }
         const script = document.createElement("script");
@@ -42,7 +41,6 @@ export default function Page() {
       });
     };
 
-    // Muat THREE.js & Vanta.js, lalu inisialisasi efek Vanta
     loadScript("https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js")
       .then(() => loadScript("https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"))
       .then(() => {

@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Merriweather } from "next/font/google";
-import Link from "next/link";
+import { Merriweather } from "next/font/google";;
 import dynamic from "next/dynamic";
 
 const Page = dynamic(() => import("@/app/components/home/page"));
