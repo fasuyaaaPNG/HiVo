@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import { Merriweather } from "next/font/google";;
+import { Merriweather } from "next/font/google";
 import dynamic from "next/dynamic";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Page = dynamic(() => import("@/app/components/home/page"));
 const Panduan = dynamic(() => import("@/app/components/panduan/page"));
@@ -11,9 +12,9 @@ const Feedback = dynamic(() => import("@/app/components/feedback/page"));
 
 const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"], 
+  weight: ["300", "400", "700", "900"],
   style: ["normal", "italic"],
-  display: "swap", 
+  display: "swap",
 });
 
 const links = ["Home", "Panduan", "Scan & Terjemah", "About Us", "Feedback"];
@@ -70,7 +71,11 @@ export default function Home() {
             {links.map((text, index) => (
               <button
                 key={index}
-                className={`z-10 transition-all duration-300 ${activeIndex === index ? "text-black" : "bg-text-gradient bg-clip-text text-transparent"}`}
+                className={`z-10 transition-all duration-300 ${
+                  activeIndex === index
+                    ? "text-black"
+                    : "bg-text-gradient bg-clip-text text-transparent"
+                }`}
                 onClick={() => setActiveIndex(index)}
               >
                 {text}
@@ -79,7 +84,16 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      {renderPage()}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 0.5 }}
+        >
+          {renderPage()}
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 }
