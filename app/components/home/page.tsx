@@ -53,12 +53,13 @@ export default function Page() {
               mouseControls: true,
               touchControls: true,
               gyroControls: false,
-              minHeight: 200.0,
-              minWidth: 200.0,
+              minHeight: 100.0,
+              minWidth: 100.0,
               baseColor: 0x108002,
               backgroundColor: 0x80708,
-              amplitudeFactor: 3,
+              amplitudeFactor: 1,
               xOffset: 0.3,
+              yOffset: 0.05,
               size: 1.6,
             })
           );
@@ -71,7 +72,7 @@ export default function Page() {
   }, []); 
 
   return (
-    <div ref={vantaRef} className={`${merriweather.className} h-screen w-full pt-[80px]`}>
+    <div ref={vantaRef} className={`${merriweather.className} h-[540px] w-full pt-[140px]`}>
       <div className="ml-[57px]">
         <h1 className="text-[24px] mb-[9px] w-[522px] font-bold">Menerjemahkan <span className="bg-text-gradient2 bg-clip-text text-transparent">Bahasa Isyarat</span> dengan Cepat dan Mudah dengan <span className="bg-text-gradient3 bg-clip-text text-transparent">Teknologi AI.</span></h1>
         <p className={`${playfair.className} text-[14px] w-[461px] font-normal`}>Kami menghadirkan solusi inovatif yang mengubah isyarat menjadi teks dan suara secara instan, mempermudah komunikasi yang cepat, akurat</p>
