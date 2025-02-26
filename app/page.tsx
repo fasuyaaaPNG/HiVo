@@ -1,5 +1,6 @@
-"use client";
-import { useState } from "react";
+'use client';
+
+import { useState, useEffect } from "react";
 import { Merriweather } from "next/font/google";
 import dynamic from "next/dynamic";
 import { AnimatePresence, motion } from "framer-motion";
@@ -19,24 +20,62 @@ const merriweather = Merriweather({
 
 const links = ["Home", "Panduan", "Scan & Terjemah", "About Us", "Feedback"];
 
-const leftOffsets: { [key: number]: number } = {
-  0: 32,   // Home
-  1: 110,  // Panduan
-  2: 220,  // Scan & Terjemah
-  3: 375,  // About Us
-  4: 484,  // Feedback
-};
-
-const widths: { [key: number]: number } = {
-  0: 63,   // Home
-  1: 90,   // Panduan
-  2: 140,  // Scan & Terjemah
-  3: 90,   // About Us
-  4: 90,   // Feedback
-};
-
 export default function Home() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [leftOffsets, setLeftOffsets] = useState<Record<number, number>>({
+    0: 32,
+    1: 110,
+    2: 220,
+    3: 375,
+    4: 484,
+  });
+  const [widths, setWidths] = useState<Record<number, number>>({
+    0: 63,
+    1: 90,
+    2: 140,
+    3: 90,
+    4: 90,
+  });
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (window.innerWidth >= 1508) {
+        setLeftOffsets({
+          0: 25,
+          1: 135,
+          2: 267,
+          3: 477,
+          4: 603,
+        });
+        setWidths({
+          0: 90,
+          1: 110,
+          2: 185,
+          3: 107,
+          4: 120,
+        });
+      } else {
+        setLeftOffsets({
+          0: 32,
+          1: 110,
+          2: 220,
+          3: 375,
+          4: 484,
+        });
+        setWidths({
+          0: 63,
+          1: 90,
+          2: 140,
+          3: 90,
+          4: 90,
+        });
+      }
+    };
+
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
 
   const renderPage = () => {
     switch (activeIndex) {
@@ -57,10 +96,10 @@ export default function Home() {
 
   return (
     <>
-      <nav className={`${merriweather.className} bg-[#1A1A1D] h-[91px]`}>
+      <nav className={`${merriweather.className} bg-[#1A1A1D] h-[91px] 2xl:h-[121px]`}>
         <div className="flex justify-between items-center ml-[38px] mr-[30px] pt-[2px]">
-          <img src="./logo/LOGO.png" alt="" className="w-[150px]" />
-          <div className="relative h-[50px] text-[14px] bg-[#1E1E1E] font-normal rounded-[100px] text-[#213555] flex items-center gap-[43px] pr-[43px] pl-[43px]">
+          <img src="./logo/LOGO.png" alt="" className="w-[150px] 2xl:w-[200px]" />
+          <div className="relative h-[50px] text-[14px] 2xl:text-[20px] bg-[#1E1E1E] font-normal rounded-[100px] text-[#213555] flex items-center gap-[43px] pr-[43px] pl-[43px]">
             <div
               className="absolute h-[29px] rounded-[100px] bg-[#FFEDFA] transition-all duration-300"
               style={{
@@ -88,7 +127,7 @@ export default function Home() {
         <motion.div
           key={activeIndex}
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1}}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           {renderPage()}
