@@ -99,7 +99,7 @@ export default function Home() {
       <nav className={`${merriweather.className} bg-[#1A1A1D] h-[91px] 2xl:h-[121px]`}>
         <div className="flex justify-between items-center ml-[38px] mr-[30px] pt-[2px]">
           <img src="./logo/LOGO.png" alt="" className="w-[150px] 2xl:w-[200px]" />
-          <div className="relative h-[50px] text-[14px] 2xl:text-[20px] bg-[#1E1E1E] font-normal rounded-[100px] text-[#213555] flex items-center gap-[43px] pr-[43px] pl-[43px]">
+          <div className="relative h-[50px] text-[14px] 2xl:text-[20px] bg-[#2B2B2B] font-normal rounded-[100px] text-[#213555] flex items-center gap-[43px] pr-[43px] pl-[43px]">
             <div
               className="absolute h-[29px] rounded-[100px] bg-[#FFEDFA] transition-all duration-300"
               style={{

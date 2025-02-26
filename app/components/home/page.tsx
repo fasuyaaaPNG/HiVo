@@ -83,7 +83,7 @@ export default function Page() {
   }, [xOffset]);
 
   return (
-    <div ref={vantaRef} className={`${merriweather.className} w-full h-[530px] pt-[140px]`}>
+    <div ref={vantaRef} className={`${merriweather.className} w-full h-[530px] 2xl:h-[630px] pt-[140px]`}>
       <div className="ml-[57px]">
         <h1 className="text-[24px] xl:text-[30px] 2xl:text-[40px] mb-[13px] w-[522px] xl:w-[602px] 2xl:w-[802px] font-bold">
           Menerjemahkan <span className="bg-text-gradient2 bg-clip-text text-transparent">Bahasa Isyarat</span> dengan Cepat dan Mudah dengan <span className="bg-text-gradient3 bg-clip-text text-transparent">Teknologi AI.</span>
