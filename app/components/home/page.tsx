@@ -72,45 +72,36 @@ export default function Page() {
   };
 
   useEffect(() => {
-    if (!vantaRef.current) return;
-  
     const initVanta = async () => {
       await loadScript("https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js");
       await loadScript("https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js");
-  
-      let attempts = 0;
-      const interval = setInterval(() => {
-        if (window.VANTA && window.VANTA.HALO) {
-          clearInterval(interval);
-          if (vantaEffect) vantaEffect.destroy();
-          setVantaEffect(
-            window.VANTA.HALO({
-              el: vantaRef.current,
-              mouseControls: true,
-              touchControls: true,
-              gyroControls: false,
-              baseColor: 0xa4ff,
-              backgroundColor: 0x0,
-              amplitudeFactor: 3,
-              xOffset: xOffset,
-              yOffset: 0.05,
-              size: 1.8,
-            })
-          );
-        } else if (attempts > 10) {
-          clearInterval(interval); 
-        }
-        attempts++;
-      }, 200);
+      if (window.VANTA && vantaRef.current) {
+        if (vantaEffect) vantaEffect.destroy();
+        const effect = window.VANTA.HALO({
+          el: vantaRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          // baseColor: 0x108002,
+          baseColor: 0xa4ff,
+          // backgroundColor: 0x293c2f,
+          backgroundColor: 0x0,
+          // backgroundColor:0x7f0061,
+          amplitudeFactor: 3,
+          xOffset: xOffset,
+          yOffset: 0.05,
+          size: 1.8,
+        });
+        setVantaEffect(effect);
+      }
     };
-  
+
     initVanta();
-  
+
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [xOffset]);
-  
 
   return (
     <>
