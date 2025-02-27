@@ -25,9 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>
-          HiVo
-        </title>
+        <title>Hidden Voice</title>
+        <link rel="stylesheet" href="./components/home/style.css" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

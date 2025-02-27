@@ -112,8 +112,8 @@ export default function Home() {
                 key={index}
                 className={`z-10 transition-all duration-300 ${
                   activeIndex === index
-                    ? "text-black"
-                    : "bg-text-gradient bg-clip-text text-transparent"
+                    ? "bg-text-gradient6 bg-clip-text text-transparent"
+                    : "bg-text-gradient7 bg-clip-text text-transparent"
                 }`}
                 onClick={() => setActiveIndex(index)}
               >
