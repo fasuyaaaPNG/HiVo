@@ -124,7 +124,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-x-[30px] gap-y-[44px]">
+      <div className="flex flex-wrap justify-center gap-x-[45px] gap-y-[45px]">
         <motion.div
           className="relative p-[2px] rounded-[12px] h-max inline-block"
           style={{ backgroundImage: rotatingBg }}
@@ -137,12 +137,12 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[21px] pr-[25px] pb-[23px] pl-[24px] bg-[#232420] rounded-[12px]`}>
-            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] font-bold mb-[11px]">
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[25px] pr-[25px] pb-[27px] pl-[24px] bg-[#232420] rounded-[12px]`}>
+            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Kamera Penerjemah Gerakan
             </p>
-            <img className="mb-[16px] w-[22px]" src="./icon/Camera.svg" alt="" />
-            <p className="w-[229px] text-center text-[9px]">
+            <img className="mb-[16px] w-[22px] xl:w-[26px]" src="./icon/Camera.svg" alt="" />
+            <p className="w-[229px] xl:w-[290px] text-center text-[9px] xl:text-[13px]">
               Menggunakan teknologi AI dan computer vision untuk mendeteksi gerakan tubuh atau tangan sebagai bahasa isyarat.
             </p>
           </div>
@@ -159,12 +159,12 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[21px] pr-[25px] pb-[23px] pl-[24px] bg-[#232420] rounded-[12px]`}>
-            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] font-bold mb-[11px]">
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[25px] pr-[25px] pb-[27px] pl-[24px] bg-[#232420] rounded-[12px]`}>
+            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Hasil Penerjemahan
             </p>
-            <img className="mb-[16px] w-[22px]" src="./icon/g_translate.svg" alt="" />
-            <p className="w-[220px] text-center text-[9px]">
+            <img className="mb-[16px] w-[22px] xl:w-[26px]" src="./icon/g_translate.svg" alt="" />
+            <p className="w-[220px] xl:w-[240px] text-center text-[9px] xl:text-[13px]">
               Setelah sistem mendeteksi bahasa isyarat, hasilnya akan ditampilkan dalam bentuk teks atau suara.
             </p>
           </div>
@@ -182,11 +182,11 @@ export default function Page() {
             }}
           />
           <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[18px] pr-[21px] pb-[15px] pl-[20px] bg-[#232420] rounded-[12px]`}>
-            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] font-bold mb-[11px]">
+            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Riwayat Terjemahan
             </p>
-            <img className="mb-[16px] w-[22px]" src="./icon/schedule.svg" alt="" />
-            <p className="w-[237px] text-center text-[9px]">
+            <img className="mb-[16px] w-[22px] xl:w-[26px]" src="./icon/schedule.svg" alt="" />
+            <p className="w-[237px] xl:w-[340px] text-center text-[9px] xl:text-[13px]">
               Fitur ini menyimpan hasil penerjemahan sebelumnya, sehingga pengguna bisa melihat kembali pesan yang pernah diterjemahkan tanpa harus mengulang gerakan.
             </p>
           </div>
@@ -203,12 +203,12 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[26px] pr-[31px] pb-[31px] pl-[31px] bg-[#232420] rounded-[12px]`}>
-            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] font-bold mb-[11px]">
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[30px] pr-[31px] pb-[31px] pl-[33px] bg-[#232420] rounded-[12px]`}>
+            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Penerjemah Multibahasa
             </p>
-            <img className="mb-[16px] w-[22px]" src="./icon/Globe.svg" alt="" />
-            <p className="w-[248px] text-center text-[9px]">
+            <img className="mb-[16px] w-[22px] xl:w-[26px]" src="./icon/Globe.svg" alt="" />
+            <p className="w-[248px] xl:w-[320px] text-center text-[9px] xl:text-[13px]">
               Mendukung penerjemahan ke berbagai bahasa.
             </p>
           </div>
@@ -226,11 +226,11 @@ export default function Page() {
             }}
           />
           <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[21px] pr-[25px] pb-[23px] pl-[24px] bg-[#232420] rounded-[12px]`}>
-            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] font-bold mb-[11px]">
+            <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Konversi Otomatis ke Teks atau Suara
             </p>
-            <img className="mb-[16px] w-[22px]" src="./icon/Mic.svg" alt="" />
-            <p className="w-[248px] text-center text-[9px]">
+            <img className="mb-[16px] w-[22px] xl:w-[26px]" src="./icon/Mic.svg" alt="" />
+            <p className="w-[248px] xl:w-[370px] text-center text-[9px] xl:text-[13px]">
               Hasil terjemahan dapat diketik atau diucapkan sesuai kebutuhan pengguna.
             </p>
           </div>
