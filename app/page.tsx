@@ -18,20 +18,20 @@ const merriweather = Merriweather({
   display: "swap",
 });
 
-const links = ["Home", "Panduan", "Scan & Terjemah", "About Us", "Feedback"];
+const links = ["Home", "Fitur", "Scan & Terjemah", "About Us", "Feedback"];
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [leftOffsets, setLeftOffsets] = useState<Record<number, number>>({
     0: 32,
-    1: 110,
+    1: 10,
     2: 220,
     3: 375,
     4: 484,
   });
   const [widths, setWidths] = useState<Record<number, number>>({
     0: 63,
-    1: 90,
+    1: 20,
     2: 140,
     3: 90,
     4: 90,
@@ -42,14 +42,14 @@ export default function Home() {
       if (window.innerWidth >= 1508) {
         setLeftOffsets({
           0: 25,
-          1: 135,
-          2: 267,
+          1: 125,
+          2: 225,
           3: 477,
           4: 603,
         });
         setWidths({
           0: 90,
-          1: 110,
+          1: 87,
           2: 185,
           3: 107,
           4: 120,
@@ -58,13 +58,13 @@ export default function Home() {
         setLeftOffsets({
           0: 32,
           1: 110,
-          2: 220,
-          3: 375,
-          4: 484,
+          2: 190,
+          3: 345,
+          4: 450,
         });
         setWidths({
           0: 63,
-          1: 90,
+          1: 63,
           2: 140,
           3: 90,
           4: 90,
@@ -96,12 +96,12 @@ export default function Home() {
 
   return (
     <>
-      <nav className={`${merriweather.className} bg-[#1A1A1D] h-[91px] 2xl:h-[121px]`}>
+      <nav className={`${merriweather.className} bg-[#443C75] h-[91px] 2xl:h-[121px] pt-[1.5%]`}>
         <div className="flex justify-between items-center ml-[38px] mr-[30px] pt-[2px]">
-          <img src="./logo/LOGO.png" alt="" className="w-[150px] 2xl:w-[200px]" />
-          <div className="relative h-[50px] text-[14px] 2xl:text-[20px] bg-[#2B2B2B] font-normal rounded-[100px] text-[#213555] flex items-center gap-[43px] pr-[43px] pl-[43px]">
+          <img src="./logo/logo.svg" alt="" className=" w-[110px] 2xl:w-[139px]" />
+          <div className="relative h-[50px] text-[14px] 2xl:text-[20px] bg-[#2F2B42] font-normal rounded-[100px] text-[#213555] flex items-center gap-[43px] pr-[43px] pl-[43px]">
             <div
-              className="absolute h-[29px] rounded-[100px] bg-[#FFEDFA] transition-all duration-300"
+              className="absolute h-[29px] rounded-[100px] bg-[#4E495D] transition-all duration-300"
               style={{
                 left: `${leftOffsets[activeIndex]}px`,
                 width: `${widths[activeIndex]}px`,
@@ -112,8 +112,9 @@ export default function Home() {
                 key={index}
                 className={`z-10 transition-all duration-300 ${
                   activeIndex === index
-                    ? "bg-text-gradient6 bg-clip-text text-transparent"
-                    : "bg-text-gradient7 bg-clip-text text-transparent"
+                    // ? "bg-text-gradient6 bg-clip-text text-transparent"
+                    ? "text-[#ffffff]"
+                    : "text-[#cccccc]"
                 }`}
                 onClick={() => setActiveIndex(index)}
               >
