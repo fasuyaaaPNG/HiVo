@@ -44,8 +44,8 @@ export default function Home() {
           0: 25,
           1: 125,
           2: 225,
-          3: 477,
-          4: 603,
+          3: 430,
+          4: 555,
         });
         setWidths({
           0: 90,

@@ -20,6 +20,7 @@ export default {
         'text-gradient5': 'linear-gradient(to bottom, #9EDDFF 34%, #FF7ED4 76%)',
         'text-gradient6': 'linear-gradient(to right, #F72585 10%, #4361EE 79%)',
         'text-gradient7': 'linear-gradient(to right, #F72585 10%, #00FFFF 79%)',
+        'bg-gradient': 'linear-gradient(to bottom, #FF1493 9%, #8089C9 53%, #00FFFF 94%)',
       },
     },
   },

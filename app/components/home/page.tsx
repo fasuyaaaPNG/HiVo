@@ -82,10 +82,10 @@ export default function Page() {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          // baseColor: 0x108002,
-          baseColor: 0xa4ff,
+          baseColor: 0x0,
+          // baseColor: 0xa4ff,
           // backgroundColor: 0x293c2f,
-          backgroundColor: 0x0,
+          backgroundColor: 0x130E1E,
           // backgroundColor:0x7f0061,
           amplitudeFactor: 3,
           xOffset: xOffset,
@@ -137,7 +137,7 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[25px] pr-[25px] pb-[27px] pl-[24px] bg-[#232420] rounded-[12px]`}>
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[25px] pr-[25px] pb-[27px] pl-[24px] bg-[#1A1427] rounded-[12px]`}>
             <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Kamera Penerjemah Gerakan
             </p>
@@ -159,7 +159,7 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[25px] pr-[25px] pb-[27px] pl-[24px] bg-[#232420] rounded-[12px]`}>
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[25px] pr-[25px] pb-[27px] pl-[24px] bg-[#1A1427] rounded-[12px]`}>
             <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Hasil Penerjemahan
             </p>
@@ -181,7 +181,7 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[18px] pr-[21px] pb-[15px] pl-[20px] bg-[#232420] rounded-[12px]`}>
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[18px] pr-[21px] pb-[15px] pl-[20px] bg-[#1A1427] rounded-[12px]`}>
             <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Riwayat Terjemahan
             </p>
@@ -203,7 +203,7 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[30px] pr-[31px] pb-[31px] pl-[33px] bg-[#232420] rounded-[12px]`}>
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[30px] pr-[31px] pb-[31px] pl-[33px] bg-[#1A1427] rounded-[12px]`}>
             <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Penerjemah Multibahasa
             </p>
@@ -225,7 +225,7 @@ export default function Page() {
               filter: "drop-shadow(0px 0px 10px #FF1493)"
             }}
           />
-          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[21px] pr-[25px] pb-[23px] pl-[24px] bg-[#232420] rounded-[12px]`}>
+          <div className={`${montserrat.className} relative w-max flex flex-col items-center pt-[21px] pr-[25px] pb-[23px] pl-[24px] bg-[#1A1427] rounded-[12px]`}>
             <p className="bg-text-gradient5 bg-clip-text text-transparent text-[10px] xl:text-[14px] font-bold mb-[11px]">
               Konversi Otomatis ke Teks atau Suara
             </p>
