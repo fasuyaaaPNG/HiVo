@@ -22,6 +22,9 @@ export default {
         'text-gradient7': 'linear-gradient(to right, #F72585 10%, #00FFFF 79%)',
         'bg-gradient': 'linear-gradient(to bottom, #FF1493 9%, #8089C9 53%, #00FFFF 94%)',
       },
+      boxShadow: {
+        custom: '0 0 15px 12px rgba(255, 255, 255, 0.05)',
+      },
     },
   },
   plugins: [],
