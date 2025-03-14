@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
-const LoginMobile = dynamic(() => import("../component_page/landing_login_register_mobile/page"), {
+const LoginMobile = dynamic(() => import("../component_page/landing/landing_login_register_mobile/page"), {
   ssr: false,
 });
 
-const LoginDesktop = dynamic(() => import("../component_page/login_desktop/page"), {
+const LoginDesktop = dynamic(() => import("../component_page/landing/landing_login_register_desktop/page"), {
   ssr: false,
 });
 
