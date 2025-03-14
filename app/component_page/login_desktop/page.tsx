@@ -15,7 +15,7 @@ export default function Page() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="bg-[#2A2140] border border-red-500 w-screen ml-auto mr-auto h-screen grid place-items-center">
+    <div className="bg-[#2A2140] w-screen ml-auto mr-auto h-screen grid place-items-center">
       <div
         id="content"
         className="[background:linear-gradient(to_right,rgba(255,20,147,0.5)_4%,rgba(0,255,255,0.5)_40%)] rounded-[10px] p-[1px] w-[400px] xl:w-[470px] ml-auto mr-auto mt-[10.344%] xl:mt-[3.344%] shadow-custom"

@@ -28,7 +28,7 @@ export default function Page() {
             id="judul"
             className={`${poppins.className} mb-[24px] xl:mb-[30px] text-center text-[20px] xl:text-[24px]  font-bold`}
           >
-            Create an account
+            Create an Mobile
           </p>
 
           {/* Form Inputs */}
