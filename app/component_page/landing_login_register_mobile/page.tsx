@@ -20,7 +20,7 @@ const lobster = Lobster({
 
 export default function Page() {  
     return (
-        <div id="wrapper" className="h-screen bg-[#151023] border border-red-600">
+        <div id="wrapper" className="h-screen bg-[#151023]">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max">
                 <p className={`${lobster.className} text-center text-[55px]`}>HiVo</p>
                 <p className={`${poppins.className} text-center text-[12px]`}>Terjemahkan Bahasa Isyarat menggunakan AI</p>
