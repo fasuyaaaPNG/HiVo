@@ -25,9 +25,11 @@ export default function Page() {
                 <p className={`${lobster.className} text-center text-[55px]`}>HiVo</p>
                 <p className={`${poppins.className} text-center text-[12px]`}>Terjemahkan Bahasa Isyarat menggunakan AI</p>
             </div>
-            <div className="w-[80vw] ml-auto mr-auto relative top-[80vh] flex flex-col text-center gap-y-[14px]">
-                <a href="" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#3A2E5F] text-[#ffffff]`}>Sign Up</a>
-                <a href="" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#DCDCDC] text-[#3A2E5F]`}>Sign Up</a>
+            <div id="wrapper2" className="absolute w-screen bottom-[50px]">
+                <div className="w-[80vw] ml-auto mr-auto relative flex flex-col text-center gap-y-[14px]">
+                    <a href="" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#3A2E5F] text-[#ffffff]`}>Sign Up</a>
+                    <a href="" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#DCDCDC] text-[#3A2E5F]`}>Sign Up</a>
+                </div>
             </div>
         </div>
     )
