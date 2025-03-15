@@ -44,11 +44,11 @@ export default function Page() {
                 </button>
               </div>
               <p className="text-center text-[8px] font-bold mb-6">Dengan membuat akun, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi.</p>
-              <input type="submit" value="Sign In" className={`${poppins.className} text-[10px] font-bold border border-[#ffffff] rounded-md pt-2 pb-2 pl-11 pr-11 ml-auto mr-auto`} />
+              <input type="submit" value="Sign In" className={`${poppins.className} text-[10px] font-bold bg-[#ffffff2c] backdrop-blur-sm rounded-md pt-2 pb-2 pl-11 pr-11 ml-auto mr-auto`} />
             </form>
             <div className="mb-10 flex ml-auto mr-auto w-max gap-x-2">
               <img src="/assets/stroke2.svg" alt="" className="w-28" />
-              <p className={`${poppins.className} font-bold text-[6px]`}>Sign In with</p>
+              <p className={`${poppins.className} font-bold text-[8px]`}>Sign In with</p>
               <img src="/assets/stroke2.svg" alt="" className="w-28" />
             </div>
             <div>
