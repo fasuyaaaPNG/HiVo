@@ -43,8 +43,8 @@ export default function Page() {
                   {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
                 </button>
               </div>
-              <p className="text-center text-[7px] font-bold mb-9">Dengan membuat akun, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi.</p>
-              <input type="submit" value="Sign In" className={`${poppins.className} text-[10px] font-bold border border-[#ffffff] rounded-md pt-2 pb-2 pl-10 pr-10 ml-auto mr-auto`} />
+              <p className="text-center text-[7px] font-bold mb-5">Dengan membuat akun, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi.</p>
+              <input type="submit" value="Sign In" className={`${poppins.className} text-[10px] font-bold border border-[#ffffff] rounded-md pt-2 pb-2 pl-11 pr-11 ml-auto mr-auto`} />
             </form>
             <div className="mb-10 flex ml-auto mr-auto w-max gap-x-2">
               <img src="/assets/stroke2.svg" alt="" className="w-28" />
