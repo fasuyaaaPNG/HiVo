@@ -23,7 +23,7 @@ export default function Page() {
             <a href="/sign">
               <div id="back" className="flex items-center gap-x-[10px]">
                 <SlArrowLeft  className="size-3"/>
-                <p className={`${poppins.className} text-[10px] font-thin`}>Back</p>
+                <p className={`${poppins.className} text-[12px] font-thin`}>Back</p>
               </div>
             </a>
           </div>
