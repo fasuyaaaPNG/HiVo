@@ -21,18 +21,17 @@ export default function Page() {
         <div className="absolute w-screen top-6">
           <div className="h w-[90%] ml-auto mr-auto flex flex-row justify-between">
             <a href="/sign">
-              <div id="back" className="flex items-center gap-x-[10px]">
+                <div id="back" className="flex items-center gap-x-[10px]">
                 <SlArrowLeft  className="size-3"/>
                 <p className={`${poppins.className} text-[10px] font-thin`}>Back</p>
-              </div>
+                </div>
             </a>
           </div>
         </div>
         <div className="absolute w-screen top-24">
           <div className="w-[90%] ml-auto mr-auto">
-            <h1 className={`${poppins.className} font-bold w-full text-center mb-8`}>Create an account</h1>
-            <form action="" className="mb-6 flex flex-col gap-y-3">
-              <input type="text" name="" id="" placeholder="Name" className={`w-full pl-3 pt-4 pb-4 pr-3 bg-transparent border border-[#b5b1c2] rounded-md outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
+            <h1 className={`${poppins.className} font-bold w-full text-center mb-8`}>Welcome Back!</h1>
+            <form action="" className="mb-6 flex flex-col gap-y-6">
               <input type="email" name="" id="" placeholder="Email Address" className={`w-full pl-3 pt-4 pb-4 pr-3 bg-transparent border border-[#b5b1c2] rounded-md outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
               <div className="border border-[#b5b1c2] rounded-md flex pl-3 pr-3">
                 <input type={showPassword ? "text" : "password"} name="" id="" placeholder="Password" className={`pt-4 pb-4 w-full bg-transparent h-full outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
@@ -45,11 +44,11 @@ export default function Page() {
                 </button>
               </div>
               <p className="text-center text-[7px] font-bold mb">Dengan membuat akun, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi.</p>
-              <input type="submit" value="Sign Up" className={`${poppins.className} text-[10px] font-bold border border-[#ffffff] rounded-md pt-2 pb-2 pl-10 pr-10 ml-auto mr-auto`} />
+              <input type="submit" value="Sign In" className={`${poppins.className} text-[10px] font-bold border border-[#ffffff] rounded-md pt-2 pb-2 pl-10 pr-10 ml-auto mr-auto`} />
             </form>
             <div className="mb-10 flex ml-auto mr-auto w-max gap-x-2">
               <img src="/assets/stroke2.svg" alt="" className="w-28" />
-              <p className={`${poppins.className} font-bold text-[6px]`}>Sign Up with</p>
+              <p className={`${poppins.className} font-bold text-[6px]`}>Sign In with</p>
               <img src="/assets/stroke2.svg" alt="" className="w-28" />
             </div>
             <div>
