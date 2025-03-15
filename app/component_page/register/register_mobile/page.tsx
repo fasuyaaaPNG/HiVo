@@ -34,7 +34,7 @@ export default function Page() {
             <form action="" className="mb-6 flex flex-col">
               <input type="text" name="" id="" placeholder="Name" className={`mb-3 w-full pl-3 pt-4 pb-4 pr-3 bg-transparent border border-[#b5b1c2] rounded-md outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
               <input type="email" name="" id="" placeholder="Email Address" className={`mb-3 w-full pl-3 pt-4 pb-4 pr-3 bg-transparent border border-[#b5b1c2] rounded-md outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
-              <div className="mb-3 border border-[#b5b1c2] rounded-md flex pl-3 pr-3">
+              <div className="mb-3 border border-[#b5b1c2] rounded-md gap-x-3 flex pl-3 pr-3">
                 <input type={showPassword ? "text" : "password"} name="" id="" placeholder="Password" className={`pt-4 pb-4 w-full bg-transparent h-full outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
                 <button
                   type="button"
