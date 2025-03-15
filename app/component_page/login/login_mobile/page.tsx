@@ -30,7 +30,7 @@ export default function Page() {
         </div>
         <div className="absolute w-screen top-24">
           <div className="w-[90%] ml-auto mr-auto">
-            <h1 className={`${poppins.className} font-bold w-full text-center mb-8`}>Welcome Back!</h1>
+            <h1 className={`${poppins.className} text-[24px] font-bold w-full text-center mb-8`}>Welcome Back!</h1>
             <form action="" className="mb-6 flex flex-col gap-y-6">
               <input type="email" name="" id="" placeholder="Email Address" className={`w-full pl-3 pt-4 pb-4 pr-3 bg-transparent border border-[#b5b1c2] rounded-md outline-none focus:outline-none placeholder:relative placeholder:bottom-2 placeholder:${poppins.className} placeholder:font-bold placeholder:text-white focus:placeholder-transparent`}/>
               <div className="border border-[#b5b1c2] rounded-md flex pl-3 pr-3">
@@ -43,7 +43,7 @@ export default function Page() {
                   {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
                 </button>
               </div>
-              <p className="text-center text-[7px] font-bold mb">Dengan membuat akun, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi.</p>
+              <p className="text-center text-[7px] font-bold mb-9">Dengan membuat akun, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi.</p>
               <input type="submit" value="Sign In" className={`${poppins.className} text-[10px] font-bold border border-[#ffffff] rounded-md pt-2 pb-2 pl-10 pr-10 ml-auto mr-auto`} />
             </form>
             <div className="mb-10 flex ml-auto mr-auto w-max gap-x-2">
