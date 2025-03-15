@@ -27,8 +27,8 @@ export default function Page() {
             </div>
             <div id="wrapper2" className="absolute w-screen bottom-[50px]">
                 <div className="w-[80vw] ml-auto mr-auto relative flex flex-col text-center gap-y-[14px]">
-                    <a href="" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#3A2E5F] text-[#ffffff]`}>Sign Up</a>
-                    <a href="" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#DCDCDC] text-[#3A2E5F]`}>Sign Up</a>
+                    <a href="/register" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#3A2E5F] text-[#ffffff]`}>Sign Up</a>
+                    <a href="/login" className={`${poppins.className} pt-[14px] pb-[14px] rounded-[5px] text-[13px] font-bold bg-[#DCDCDC] text-[#3A2E5F]`}>Sign In</a>
                 </div>
             </div>
         </div>
