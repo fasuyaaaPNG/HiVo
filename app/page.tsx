@@ -18,7 +18,7 @@ const merriweather = Merriweather({
   display: "swap",
 });
 
-const links = ["Home", "Fitur", "Scan & Terjemah", "About Us", "Feedback"];
+const links = ["Home", "Fitur", "About Us", "Feedback"];
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -84,10 +84,8 @@ export default function Home() {
       case 1:
         return <Panduan />;
       case 2:
-        return <Scan />;
-      case 3:
         return <About />;
-      case 4:
+      case 3:
         return <Feedback />;
       default:
         return <Page />;
